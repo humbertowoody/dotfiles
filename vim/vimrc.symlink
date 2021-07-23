@@ -1,0 +1,48 @@
+" .vimrc @humbertowoody
+" This is my personal configuration for working with VIM.
+" Honestly, it's pretty basic.
+
+" Basic configuration.
+set tabstop=2 softtabstop=2
+set shiftwidth=2
+set expandtab
+set smartindent
+set exrc
+set guicursor=
+set relativenumber
+set nohlsearch
+set hidden
+set noerrorbells
+set nu
+set nowrap
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set termguicolors
+set scrolloff=8
+set noshowmode
+set completeopt=menuone,noinsert,noselect
+set signcolumn=yes
+set colorcolumn=80
+set updatetime=50
+
+" Plugins will be downloaded under the specified directory.
+call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'gruvbox-community/gruvbox'
+Plug 'preservim/nerdtree'
+Plug 'elixir-editors/vim-elixir'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+" Here we set the GruvBox theme
+" set background=light
+set background=dark " @humbertowoody's eyes prefer dark mode.
+
+" Yeash, gruvbox is cool
+colorscheme gruvbox
+

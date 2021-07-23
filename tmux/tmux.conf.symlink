@@ -1,0 +1,42 @@
+# .tmux.conf - @humbertowoody
+# Tmux configuration file for appropriate daily usage.
+
+# For allowing colors on different applications such as VIM WeeChat
+# when using Tmux.
+set -g default-terminal "xterm-256color"
+
+# Start windows and panes at 1 instead of 0 which is better from an
+# ergonomics' perspective.
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Enable mouse
+# (Life's too short, man)
+set -g mouse on
+
+# Renumber stuff when it gets closed
+set -g renumber-windows on
+
+# Tmux Plugin Manager
+# There are a couple of plugins in tmux that _really_ helps me on my daily
+# tmux usage
+
+# Dracula theme https://draculatheme.com/tmux
+set -g @plugin "dracula/tmux"
+
+# Plugin properties
+#
+# Customize the status bar (Dracula theme)
+set -g @dracula-show-battery true
+set -g @dracula-show-location true
+set -g @dracula-show-fahrenheit false
+set -g @dracula-military-time false
+set -g @dracula-show-timezone true
+set -g @dracula-cpu-usage true
+set -g @dracula-ram-usage true
+set -g @dracula-gpu-usage false
+set -g @dracula-day-month true
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+
