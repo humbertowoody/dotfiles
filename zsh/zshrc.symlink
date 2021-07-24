@@ -138,3 +138,10 @@ function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
 # Show a nice message when the terminal boots up.
 # fortune -s | cowsay -f stegosaurus | lolcat -F 1;
 
+# Wakeup our LAN NAS/Server
+function wakeup()
+{
+  local deviceMacAddress=${1:-00:21:9b:0c:21:5d}
+  wakeonlan $deviceMacAddress
+}
+
