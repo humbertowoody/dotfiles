@@ -28,15 +28,21 @@ set -g @plugin "dracula/tmux"
 #
 # Customize the status bar (Dracula theme)
 set -g @dracula-show-battery true
+set -g @dracula-show-network true
+set -g @dracula-network-bandwith en0 
+set -g @dracula-show-weather true
+set -g @dracula-show-time true
 set -g @dracula-show-location true
 set -g @dracula-show-fahrenheit false
+set -g @dracula-show-powerline true
+set -g @dracula-show-flags true
 set -g @dracula-military-time false
 set -g @dracula-show-timezone true
+set -g @dracula-show-lef-icon session
 set -g @dracula-cpu-usage true
 set -g @dracula-ram-usage true
 set -g @dracula-gpu-usage false
 set -g @dracula-day-month true
-set -g @dracula-show-powerline true
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
