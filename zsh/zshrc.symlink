@@ -1,3 +1,13 @@
+# .zshrc - @humbertowoody
+#
+# This is my main ZSH configuration file. I use Powerlevel10k and OhMyZSH to
+# setup my prompt + shell.
+#
+
+
+# Sometimes it works.
+export GPG_TTY=$(tty)
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -128,20 +138,8 @@ if command -v brew >/dev/null 2>&1; then
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-# For GPG
-GPG_TTY=$(tty)
-export GPG_TTY
-
-# This thing *always* saves my life when visiting and creating repositories.
-function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
-
-# Show a nice message when the terminal boots up.
-# fortune -s | cowsay -f stegosaurus | lolcat -F 1;
-
-# Wakeup our LAN NAS/Server
-function wakeup()
-{
-  local deviceMacAddress=${1:-00:21:9b:0c:21:5d}
-  wakeonlan $deviceMacAddress
-}
+# Dynamically load all "tools" (scripts) that are under ~/tools
+for scriptname in $HOME/tools/*.sh; do
+  source $scriptname;
+done
 

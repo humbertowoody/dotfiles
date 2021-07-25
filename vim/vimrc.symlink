@@ -43,6 +43,6 @@ call plug#end()
 " set background=light
 set background=dark " @humbertowoody's eyes prefer dark mode.
 
-" Yeash, gruvbox is cool
+" Yeah, gruvbox is cool
 colorscheme gruvbox
 

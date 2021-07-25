@@ -19,7 +19,14 @@ youtube-dl := $(HOME)/.config/youtube-dl
 $(youtube-dl):
 	ln -fs $(PWD)/youtube-dl $@
 
+# The $HOME/tools directory is the one where I store my local scripts
+# and custom tooling for bash-based operations.
+tools := $(HOME)/tools
+
+$(tools):
+	ln -fs $(PWD)/scripts/tools $@
+
 # General task
 .PHONY: symlink-custom-paths
-symlink-custom-paths: $(youtube-dl) $(alacritty)
+symlink-custom-paths: $(youtube-dl) $(alacritty) $(tools)
 
