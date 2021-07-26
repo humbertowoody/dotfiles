@@ -28,7 +28,7 @@ pre-setup: /usr/local/bin/brew
 ## appropriate file.
 .PHONY: brew
 brew:
-	${arch -arm64} @brew bundle
+	@arch -arm64 brew bundle
 
 ## Run various setup scripts that are really better-handled separetely
 ## instead of makefile-manipulated ones.

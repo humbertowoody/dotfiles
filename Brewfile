@@ -7,9 +7,60 @@
 # YouTube Download videos from the terminal
 brew "youtube-dl"
 
+# Elixir
+brew "elixir"
+
+# GCC
+brew "gcc"
+
+# figlet
+brew "figlet"
+
+# glow - tool to render markdown on cli
+brew "glow"
+
+# cowsay
+brew "cowsay"
+
+# httpie - curl-like tool with better features and functionality
+brew "httpie"
+
+# tmux
+brew "tmux"
+
+# weechat
+brew "weechat"
+
+# wakeonlan
+brew "wakeonlan"
+
+# fortune
+brew "fortune"
+
+# k9s - kubernetes manager
+brew "k9s"
+
+# lolcat
+brew "lolcat"
+
+# terraform
+brew "terraform"
+
+# kubectx
+brew "kubectx"
+
+# node
+brew "node"
+
 # Cask formulaes
 tap "homebrew/cask"
 
 # Transmission
 cask "transmission"
+
+# alacritty
+cask "alacritty"
+
+# dbeaver
+cask "dbeaver-community"
 
