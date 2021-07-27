@@ -4,6 +4,10 @@
 
 # Normal brew formulaes
 
+# git lfs - for storing large files
+# in use by [humbertowoody/papes](https://github.com/humbertowoody/papes)
+brew "git-lfs"
+
 # YouTube Download videos from the terminal
 brew "youtube-dl"
 
