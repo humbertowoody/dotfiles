@@ -4,6 +4,9 @@
 
 # Normal brew formulaes
 
+# helm - package manager for k8s
+brew "helm"
+
 # git lfs - for storing large files
 # in use by [humbertowoody/papes](https://github.com/humbertowoody/papes)
 brew "git-lfs"
