@@ -1,73 +1,96 @@
 # Brewfile - @humbertowoody
 # This file holds all the packages that should be installed by using
-# the homebrew package manager.
-
-# Normal brew formulaes
-
-# helm - package manager for k8s
-brew "helm"
-
-# git lfs - for storing large files
-# in use by [humbertowoody/papes](https://github.com/humbertowoody/papes)
-brew "git-lfs"
-
-# YouTube Download videos from the terminal
-brew "youtube-dl"
-
-# Elixir
-brew "elixir"
-
-# GCC
-brew "gcc"
-
-# figlet
-brew "figlet"
-
-# glow - tool to render markdown on cli
-brew "glow"
-
-# cowsay
-brew "cowsay"
-
-# httpie - curl-like tool with better features and functionality
-brew "httpie"
-
-# tmux
-brew "tmux"
-
-# weechat
-brew "weechat"
-
-# wakeonlan
-brew "wakeonlan"
-
-# fortune
-brew "fortune"
-
-# k9s - kubernetes manager
-brew "k9s"
-
-# lolcat
-brew "lolcat"
-
-# terraform
-brew "terraform"
-
-# kubectx
-brew "kubectx"
-
-# node
-brew "node"
-
-# Cask formulaes
+# the homebrew package manager. 
+tap "hashicorp/tap"
+tap "homebrew/bundle"
 tap "homebrew/cask"
-
-# Transmission
-cask "transmission"
-
-# alacritty
+tap "homebrew/core"
+# Core application library for C
+brew "glib"
+# Vector graphics library with cross-device output support
+brew "cairo"
+# Console Matrix
+brew "cmatrix"
+# Configurable talking characters in ASCII art
+brew "cowsay"
+# Image manipulation library
+brew "jpeg"
+# Functional metaprogramming aware language built on Erlang VM
+brew "elixir"
+# Banner-like program prints strings as ASCII art
+brew "figlet"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
+# Git extension for versioning large files
+brew "git-lfs"
+# Render markdown on the CLI
+brew "glow"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Kubernetes package manager
+brew "helm"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Modular IRC client
+brew "irssi"
+# Kubernetes CLI To Manage Your Clusters In Style!
+brew "k9s"
+# Tool that can switch between kubectl contexts easily and create aliases
+brew "kubectx"
+# Rainbows and unicorns in your console!
+brew "lolcat"
+# GUI for vim, made for macOS
+brew "macvim"
+# C++ Graphics Library for Data Visualization
+brew "matplotplusplus"
+# Run a Kubernetes cluster locally
+brew "minikube"
+# Text-based UI library
+brew "ncurses"
+# Platform built on V8 to build network applications
+brew "node"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Python version management
+brew "pyenv"
+# Prints a steam locomotive if you type sl instead of ls
+brew "sl"
+# Feature-rich console based todo list manager
+brew "task"
+# User interface to the TELNET protocol
+brew "telnet"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Tool for creating isolated virtual python environments
+brew "virtualenv"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Extensible IRC client
+brew "weechat"
+# JavaScript package manager
+brew "yarn"
+# Download YouTube videos from the command-line
+brew "youtube-dl"
+# Tracks most-used directories to make cd smarter
+brew "z"
+# Terraform
+brew "hashicorp/tap/terraform"
+# GPU-accelerated terminal emulator
 cask "alacritty"
-
-# dbeaver
+# Universal database tool and SQL client
 cask "dbeaver-community"
-
+cask "ghdl"
+# GTK+ based wave viewer
+cask "gtkwave"
+# Open-source BitTorrent client
+cask "transmission"
