@@ -30,6 +30,20 @@ pre-setup: /usr/local/bin/brew
 brew:
 	@arch -arm64 brew bundle
 
+## Dump the currently-installed packages with homebrew to the Brewfile and
+## overwrite it while generating a .prev copy.
+.PHONY: brew-dump
+brew-dump:
+	@mv Brewfile Brewfile.prev
+	@arch -arm64 brew bundle dump --describe --force
+	@mv Brewfile Brewfile.tmp
+	@touch Brewfile
+	@echo "# Brewfile - @humbertowoody" > Brewfile
+	@echo "# This file holds all the packages that should be installed" >> Brewfile
+	@echo "# by using the homebrew package manager." >> Brewfile
+	@cat < Brewfile.tmp >> Brewfile
+	@rm Brewfile.tmp
+
 ## Run various setup scripts that are really better-handled separetely
 ## instead of makefile-manipulated ones.
 .PHONY: scripts
