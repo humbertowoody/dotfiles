@@ -4,7 +4,6 @@
 # setup my prompt + shell.
 #
 
-
 # Sometimes it works.
 export GPG_TTY=$(tty)
 
@@ -142,4 +141,7 @@ fi
 for scriptname in $HOME/tools/*.sh; do
   source $scriptname;
 done
+
+# Set the environment variable `DOTFILES_DIR` for the dotfiles() function.
+export DOTFILES_DIR=/Users/humbertowoody/Proyectos/dotfiles
 
