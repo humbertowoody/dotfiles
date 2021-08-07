@@ -17,6 +17,8 @@ brew "cowsay"
 brew "jpeg"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
+# Modern replacement for 'ls'
+brew "exa"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
 # Infamous electronic fortune-cookie generator
@@ -71,6 +73,8 @@ brew "swagger-codegen"
 brew "task"
 # User interface to the TELNET protocol
 brew "telnet"
+# Tool to build, change, and version infrastructure
+brew "terraform"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Terminal multiplexer
@@ -91,8 +95,6 @@ brew "yarn"
 brew "youtube-dl"
 # Tracks most-used directories to make cd smarter
 brew "z"
-# Terraform
-brew "hashicorp/tap/terraform", link: false
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Universal database tool and SQL client
