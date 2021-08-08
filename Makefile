@@ -17,11 +17,10 @@ VPATH = $(shell find . -type d -not -path "*/\.*")
 /usr/local/bin/brew:
 	@scripts/pre-setup/homebrew.sh
 
-## In this step we install Alacritty and Zsh with complements.
+## In this step we install Zsh with complements.
 .PHONY: pre-setup
 pre-setup: /usr/local/bin/brew
 	@scripts/pre-setup/zsh.sh
-	@scripts/pre-setup/alacritty.sh
 
 ## Install software with Homebrew, it should be defined within the 
 ## appropriate file.
