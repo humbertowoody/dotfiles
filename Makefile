@@ -71,7 +71,6 @@ include symlink-custom-paths.Makefile
 symlinks: $(symlink-paths) symlink-custom-paths
 	@echo "<(symbolic links were created or updated)>"
 
-
 ## Run a complete setup (install everything)
 .PHONY: setup
 setup: brew scripts symlinks
