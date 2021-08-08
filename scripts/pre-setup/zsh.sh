@@ -1,15 +1,12 @@
 #!/bin/bash
-# My personal favorite shell is Zsh, this file setup all the configuration
-# required for it to work properly.
+# My personal favorite shell is ZSH, in here I install both oh-my-zsh and
+# powerlevel10k theme.
 
-# First the system link for powerlevel10k
-ln -fs $PWD/zsh/p10k.zsh.symlink $HOME/.p10k.zsh
+# Install Oh My ZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Second the symbolic link for zsh plugins
-ln -fs $PWD/zsh/zsh_plugins.txt.symlink $HOME/.zsh_plugins.txt
+# Install Powerlevel10k theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-# Finally, the main configuration for zsh
-ln -fs $PWD/zsh/zshrc.symlink $HOME/.zshrc
-
-echo "ZSH - Symbolic links created!"
-
+# Done
+echo "Done! You can now start using ZSH."

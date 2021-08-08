@@ -17,8 +17,7 @@ VPATH = $(shell find . -type d -not -path "*/\.*")
 /usr/local/bin/brew:
 	@scripts/pre-setup/homebrew.sh
 
-## This step is **really** important as it installs Alacritty + zsh which
-## are basic for the rest of configuration to work as expected.
+## In this step we install Alacritty and Zsh with complements.
 .PHONY: pre-setup
 pre-setup: /usr/local/bin/brew
 	@scripts/pre-setup/zsh.sh
@@ -28,14 +27,14 @@ pre-setup: /usr/local/bin/brew
 ## appropriate file.
 .PHONY: brew
 brew:
-	@arch -arm64 brew bundle
+	@brew bundle
 
 ## Dump the currently-installed packages with homebrew to the Brewfile and
 ## overwrite it while generating a .prev copy.
 .PHONY: brew-dump
 brew-dump:
 	@mv Brewfile Brewfile.prev
-	@arch -arm64 brew bundle dump --describe --force
+	@brew bundle dump --describe --force
 	@mv Brewfile Brewfile.tmp
 	@touch Brewfile
 	@echo "# Brewfile - @humbertowoody" > Brewfile
@@ -88,4 +87,3 @@ bin/pretty-make:
 .PHONY: help
 help: bin/pretty-make
 	@bin/pretty-make pretty-help Makefile
-
