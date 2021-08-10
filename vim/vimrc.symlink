@@ -68,3 +68,6 @@ let vim_markdown_preview_use_xdg_open=1 " macOS doesn't ship with `see`
 " Yeah, gruvbox is cool
 colorscheme gruvbox
 
+" Use the newest regex engine.
+set re=0
+
