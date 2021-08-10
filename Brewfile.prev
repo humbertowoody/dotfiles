@@ -95,8 +95,6 @@ brew "yarn"
 brew "youtube-dl"
 # Tracks most-used directories to make cd smarter
 brew "z"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 cask "ghdl"
