@@ -2,10 +2,8 @@
 #@description Personal dotfiles configuration for my environment.
 
 # Abstract:
-# 	This file holds all the necessary configuration orchestator to setup
-# macOS-based systems (yes, also works for Linux if you switch all the
-# homebrew-based installations, probably a future update might include
-# that too) with my personal choices and preferences.
+# 	This file holds all the necessary configuration orchestator to setup 
+# 	systems with my personal choices and preferences.
 
 # Make sure that everything runs with BASH as interpreter.
 SHELL := /usr/bin/env bash
