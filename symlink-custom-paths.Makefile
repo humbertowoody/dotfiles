@@ -26,7 +26,10 @@ tools := $(HOME)/tools
 $(tools):
 	ln -fs $(PWD)/scripts/tools $@
 
+# Include Pago46 custom symlink paths
+include dotfiles-p46/symlink-custom-paths.Makefile
+
 # General task
 .PHONY: symlink-custom-paths
-symlink-custom-paths: $(youtube-dl) $(alacritty) $(tools)
+symlink-custom-paths: p46-symlink-custom-paths $(youtube-dl) $(alacritty) $(tools)
 
