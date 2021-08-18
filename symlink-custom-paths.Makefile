@@ -26,10 +26,16 @@ tools := $(HOME)/tools
 $(tools):
 	ln -fs $(PWD)/scripts/tools $@
 
+# Neovim configuration
+nvim := $(HOME)/.config/nvim
+
+$(nvim):
+	ln -fs $(PWD)/nvim $@
+
 # Include Pago46 custom symlink paths
 include dotfiles-p46/symlink-custom-paths.Makefile
 
 # General task
 .PHONY: symlink-custom-paths
-symlink-custom-paths: p46-symlink-custom-paths $(youtube-dl) $(alacritty) $(tools)
+symlink-custom-paths: p46-symlink-custom-paths $(youtube-dl) $(alacritty) $(tools) $(nvim) 
 

@@ -5,6 +5,8 @@ tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Core application library for C
 brew "glib"
 # Vector graphics library with cross-device output support
@@ -17,6 +19,8 @@ brew "cowsay"
 brew "jpeg"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
+# Platform built on V8 to build network applications
+brew "node"
 # Modern replacement for 'ls'
 brew "exa"
 # Banner-like program prints strings as ASCII art
@@ -49,6 +53,8 @@ brew "kubectx"
 brew "lolcat"
 # List USB devices, just like the Linux lsusb command
 brew "lsusb"
+# Just-In-Time Compiler (JIT) for the Lua programming language
+brew "luajit", args: ["HEAD"]
 # GUI for vim, made for macOS
 brew "macvim"
 # Text-to-HTML conversion tool
@@ -59,8 +65,10 @@ brew "matplotplusplus"
 brew "minikube"
 # Text-based UI library
 brew "ncurses"
-# Platform built on V8 to build network applications
-brew "node"
+# Parser generator tool and incremental parsing library
+brew "tree-sitter", args: ["HEAD"]
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim", args: ["HEAD"]
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Python version management
