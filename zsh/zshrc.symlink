@@ -129,7 +129,7 @@ if [ -d "$HOME/tools" ]; then
 
   # Also load p46 scripts (if available)
   if [ -d "$HOME/tools/p46" ]; then
-    for p46script in $HOME/tools/p46*.sh; do
+    for p46script in $HOME/tools/p46/*.sh; do
       source $scriptname;
     done
   fi
