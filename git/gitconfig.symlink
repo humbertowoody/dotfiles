@@ -12,3 +12,5 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[alias]
+	uncommit = reset HEAD^
