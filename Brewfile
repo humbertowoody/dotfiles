@@ -105,6 +105,7 @@ brew "youtube-dl"
 brew "z"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# VHDL 2008/93/87 simulator
 cask "ghdl"
 # GTK+ based wave viewer
 cask "gtkwave"
