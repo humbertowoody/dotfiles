@@ -109,5 +109,7 @@ cask "dbeaver-community"
 cask "ghdl"
 # GTK+ based wave viewer
 cask "gtkwave"
+# Open-source Markdown editor
+cask "macdown"
 # Open-source BitTorrent client
 cask "transmission"
