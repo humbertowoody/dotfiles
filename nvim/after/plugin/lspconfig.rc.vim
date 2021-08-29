@@ -60,6 +60,9 @@ nvim_lsp.tsserver.setup {
   filetypes = { "typescript", "typescriptreact", "typescrtipt.tsx" }
 }
 
+-- For Python (?)
+require'lspconfig'.pyright.setup{}
+
 
 EOF
 
