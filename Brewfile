@@ -7,6 +7,8 @@ tap "homebrew/cask"
 tap "homebrew/core"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Core application library for C
 brew "glib"
 # Vector graphics library with cross-device output support
@@ -71,6 +73,8 @@ brew "tree-sitter", args: ["HEAD"]
 brew "neovim", args: ["HEAD"]
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # Python version management
 brew "pyenv"
 # Prints a steam locomotive if you type sl instead of ls
@@ -83,6 +87,8 @@ brew "task"
 brew "telnet"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Implementation of the Language Server Protocol for LaTeX
+brew "texlab"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Terminal multiplexer
@@ -103,6 +109,8 @@ brew "yarn"
 brew "youtube-dl"
 # Tracks most-used directories to make cd smarter
 brew "z"
+# Terraform Language Server
+brew "hashicorp/tap/terraform-ls"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # VHDL 2008/93/87 simulator

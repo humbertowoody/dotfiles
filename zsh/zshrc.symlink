@@ -138,3 +138,7 @@ fi
 # Set the environment variable `DOTFILES_DIR` for the dotfiles() function.
 export DOTFILES_DIR=${HOME}/Proyectos/dotfiles
 
+# Created by `pipx` on 2021-08-31 18:48:39
+# - used $home as a temp fix for portability
+export PATH="$PATH:$HOME/.local/bin"
+

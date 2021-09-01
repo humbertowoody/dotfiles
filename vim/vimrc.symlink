@@ -27,6 +27,7 @@ set completeopt=menuone,noinsert,noselect
 set signcolumn=yes
 set colorcolumn=80
 set updatetime=50
+set filetype=on
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))

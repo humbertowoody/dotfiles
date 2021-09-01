@@ -69,8 +69,6 @@ brew "ncurses"
 brew "tree-sitter", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim", args: ["HEAD"]
-# Platform built on V8 to build network applications
-brew "node@12"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Python version management
