@@ -5,6 +5,9 @@ tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/services"
+# Run your GitHub Actions locally 🚀
+brew "act"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Interpreted, interactive, object-oriented programming language
@@ -23,6 +26,10 @@ brew "jpeg"
 brew "elixir"
 # Platform built on V8 to build network applications
 brew "node"
+# Development kit for the Java programming language
+brew "openjdk"
+# LLVM bytecode to JavaScript compiler
+brew "emscripten"
 # Modern replacement for 'ls'
 brew "exa"
 # Banner-like program prints strings as ASCII art
@@ -71,6 +78,8 @@ brew "ncurses"
 brew "tree-sitter", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim", args: ["HEAD"]
+# Platform built on V8 to build network applications
+brew "node@14"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
@@ -93,6 +102,8 @@ brew "texlab"
 brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
+# Implementation of Java Servlet and JavaServer Pages
+brew "tomcat@9"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Tool for creating isolated virtual python environments
@@ -119,5 +130,7 @@ cask "ghdl"
 cask "gtkwave"
 # Open-source Markdown editor
 cask "macdown"
+# Development environment, tooling platform and application framework
+cask "netbeans"
 # Open-source BitTorrent client
 cask "transmission"
