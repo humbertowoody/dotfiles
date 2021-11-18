@@ -92,6 +92,8 @@ scrolling:
   # Scroll to the bottom when new text is written to the terminal.
   auto_scroll: true
 
+  opacity: 1.0
+
 # Spaces per Tab (changes require restart)
 #
 # This setting defines the width of a tab in cells.
@@ -323,7 +325,8 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+# Deprecated:
+# background_opacity: 1.0
 # background_opacity: 0.80
 
 #selection:
