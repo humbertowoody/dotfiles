@@ -6,18 +6,16 @@
 #
 # This file holds "manual" path generation and configuration for those cases.
 
+# yt-dlp is a youtube download tool
+yt-dlp := $(HOME)/yt-dlp.conf
+$(yt-dlp):
+	ln -fs $(PWD)/yt-dlp/yt-dlp.conf $(HOME)/yt-dlp.conf
+
 # Alacritty is da' best terminal emulator (and the fastest)
 alacritty := $(HOME)/.config/alacritty
 
 $(alacritty):
 	ln -fs $(PWD)/alacritty $@
-
-# YouTube DL is a utility which downloads YouTube videos directly from 
-# the command line and it's really useful.
-youtube-dl := $(HOME)/.config/youtube-dl
-
-$(youtube-dl):
-	ln -fs $(PWD)/youtube-dl $@
 
 # The $HOME/tools directory is the one where I store my local scripts
 # and custom tooling for bash-based operations.
@@ -37,5 +35,5 @@ include dotfiles-p46/symlink-custom-paths.Makefile
 
 # General task
 .PHONY: symlink-custom-paths
-symlink-custom-paths: p46-symlink-custom-paths $(youtube-dl) $(alacritty) $(tools) $(nvim) 
+symlink-custom-paths: p46-symlink-custom-paths $(yt-dlp) $(alacritty) $(tools) $(nvim) 
 
