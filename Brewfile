@@ -83,6 +83,8 @@ brew "lolcat"
 brew "lsusb"
 # Just-In-Time Compiler (JIT) for the Lua programming language
 brew "luajit", args: ["HEAD"]
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # GUI for vim, made for macOS
 brew "macvim"
 # Text-to-HTML conversion tool
@@ -95,10 +97,8 @@ brew "minikube"
 brew "tree-sitter", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Platform built on V8 to build network applications
-brew "node@14"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
@@ -123,8 +123,6 @@ brew "texlab"
 brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
-# Implementation of Java Servlet and JavaServer Pages
-brew "tomcat@9", restart_service: true
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Tool for creating isolated virtual python environments
@@ -143,6 +141,8 @@ brew "z"
 brew "hashicorp/tap/terraform-ls"
 # A youtube-dl fork with additional features and fixes
 brew "yt-dlp/taps/yt-dlp"
+# GPU-accelerated terminal emulator
+cask "alacritty"
 # Universal database tool and SQL client
 cask "dbeaver-community"
 # VHDL 2008/93/87 simulator
@@ -151,7 +151,5 @@ cask "ghdl"
 cask "gtkwave"
 # Open-source Markdown editor
 cask "macdown"
-# Development environment, tooling platform and application framework
-cask "netbeans"
 # Open-source BitTorrent client
 cask "transmission"
