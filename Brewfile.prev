@@ -27,10 +27,6 @@ brew "cowsay"
 brew "elixir"
 # Platform built on V8 to build network applications
 brew "node"
-# Development kit for the Java programming language
-brew "openjdk"
-# LLVM bytecode to JavaScript compiler
-brew "emscripten"
 # Modern replacement for 'ls'
 brew "exa"
 # Generate introspection data for GObject libraries
@@ -97,6 +93,8 @@ brew "minikube"
 brew "tree-sitter", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Development kit for the Java programming language
+brew "openjdk@11"
 # General-purpose scripting language
 brew "php"
 # Pinentry for GPG on Mac
@@ -107,10 +105,10 @@ brew "pipx"
 brew "pyenv"
 # Emulator for x86 and PowerPC
 brew "qemu"
+# Ruby version manager
+brew "rbenv"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
-# Generate clients, server stubs, and docs from an OpenAPI spec
-brew "swagger-codegen"
 # Feature-rich console based todo list manager
 brew "task"
 # User interface to the TELNET protocol
@@ -135,12 +133,12 @@ brew "watch"
 brew "weechat"
 # JavaScript package manager
 brew "yarn"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # Tracks most-used directories to make cd smarter
 brew "z"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
-# A youtube-dl fork with additional features and fixes
-brew "yt-dlp/taps/yt-dlp"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Universal database tool and SQL client
