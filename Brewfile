@@ -7,8 +7,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "yt-dlp/taps"
-# Run your GitHub Actions locally 🚀
-brew "act"
 # Image manipulation library
 brew "jpeg"
 # Clone of cat(1) with syntax highlighting and Git integration

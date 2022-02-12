@@ -7,8 +7,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "yt-dlp/taps"
-# Run your GitHub Actions locally 🚀
-brew "act"
 # Image manipulation library
 brew "jpeg"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -79,10 +77,6 @@ brew "lolcat"
 brew "lsusb"
 # Just-In-Time Compiler (JIT) for the Lua programming language
 brew "luajit", args: ["HEAD"]
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
-# GUI for vim, made for macOS
-brew "macvim"
 # Text-to-HTML conversion tool
 brew "markdown"
 # C++ Graphics Library for Data Visualization
@@ -107,6 +101,8 @@ brew "pyenv"
 brew "qemu"
 # Ruby version manager
 brew "rbenv"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Feature-rich console based todo list manager
