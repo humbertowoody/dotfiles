@@ -142,9 +142,6 @@ export DOTFILES_DIR=${HOME}/Proyectos/dotfiles
 # - used $home as a temp fix for portability
 export PATH="$PATH:$HOME/.local/bin"
 
-# Just in case the setup in the Makefile is not working (?)
-alias vim=nvim
-
 # To use Ruby Environment manager
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
