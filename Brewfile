@@ -49,6 +49,8 @@ brew "pinentry"
 brew "gnupg"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Command-driven, interactive function plotting
+brew "gnuplot"
 # GitHub Markdown previewer
 brew "grip"
 # Kubernetes package manager
