@@ -16,7 +16,13 @@ require('telescope').setup{
         ["q"] = actions.close
       },
     },
-  }
+  },
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+      prompt_prefix=🔎,
+    },
+  },
 }
 EOF
 
