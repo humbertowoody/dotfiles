@@ -24,7 +24,7 @@ set -g renumber-windows on
 set -g @plugin "dracula/tmux"
 
 # Dracula Plugin properties
-set -g @dracula-plugins "cpu-usage ram-usage network network-bandwith battery time weather"
+set -g @dracula-plugins "network battery time weather"
 
 # Customize the Dracula status bar plugins. 
 set -g @dracula-show-location true
