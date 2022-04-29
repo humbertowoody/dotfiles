@@ -19,12 +19,12 @@ brew "glib"
 brew "cairo"
 # Console Matrix
 brew "cmatrix"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
-# Platform built on V8 to build network applications
-brew "node"
 # Modern replacement for 'ls'
 brew "exa"
 # Generate introspection data for GObject libraries
@@ -89,6 +89,8 @@ brew "minikube"
 brew "tree-sitter", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Manage multiple Node.js versions
+brew "nvm"
 # Development kit for the Java programming language
 brew "openjdk@11"
 # General-purpose scripting language
