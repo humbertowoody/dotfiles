@@ -77,11 +77,11 @@ set background=dark " @humbertowoody's eyes prefer dark mode.
 
 " Set the configuration for Markdown Preview plugin
 " https://github.com/JamshedVesuna/vim-markdown-preview
-let vim_markdown_preview_github=1    " GFM using python grip() tool
-let vim_markdown_preview_temp_file=1 " We want the file to be deleted at the end.
-let vim_markdown_preview_browser='Google Chrome' " Use Chrome
-let vim_markdown_preview_toggle=2 " Render on buffer write (e.g. :w)
-let vim_markdown_preview_use_xdg_open=1 " macOS doesn't ship with `see`
+let vim_markdown_preview_github=1                 " GFM using python grip() tool
+let vim_markdown_preview_temp_file=1              " We want the file to be deleted at the end.
+let vim_markdown_preview_browser='Google Chrome'  " Use Chrome
+let vim_markdown_preview_toggle=2                 " Render on buffer write (e.g. :w)
+let vim_markdown_preview_use_xdg_open=1           " macOS doesn't ship with `see`
 
 " Yeah, gruvbox is cool
 colorscheme gruvbox
