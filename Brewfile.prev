@@ -23,6 +23,10 @@ brew "cmatrix"
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
+# Cross-platform C++ GUI toolkit
+brew "wxwidgets"
+# Programming language for highly scalable real-time systems
+brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
 # Modern replacement for 'ls'
@@ -31,6 +35,8 @@ brew "exa"
 brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # C routines to compute the Discrete Fourier Transform
@@ -65,6 +71,8 @@ brew "httpie"
 brew "infracost"
 # Modular IRC client
 brew "irssi"
+# Cross-platform Java Version Manager
+brew "jabba"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Tool that can switch between kubectl contexts easily and create aliases
@@ -89,8 +97,6 @@ brew "minikube"
 brew "tree-sitter", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Platform built on V8 to build network applications
-brew "node"
 # Manage multiple Node.js versions
 brew "nvm"
 # Development kit for the Java programming language

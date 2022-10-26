@@ -7,30 +7,46 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "yt-dlp/taps"
-# Image manipulation library
-brew "jpeg"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Perl compatible regular expressions library
+brew "pcre"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Cross-platform make
+brew "cmake"
 # Console Matrix
 brew "cmatrix"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
+# Cross-platform C++ GUI toolkit
+brew "wxwidgets"
+# Programming language for highly scalable real-time systems
+brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
-# Modern replacement for 'ls'
-brew "exa"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Modern replacement for 'ls'
+brew "exa"
+# Asynchronous event library
+brew "libevent"
+# Image manipulation library
+brew "jpeg", link: true
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # C routines to compute the Discrete Fourier Transform
@@ -43,6 +59,8 @@ brew "fortune"
 brew "git-lfs"
 # Render markdown on the CLI
 brew "glow"
+# Cryptographic library based on the code from GnuPG
+brew "libgcrypt"
 # Passphrase entry dialog utilizing the Assuan protocol
 brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
@@ -65,6 +83,10 @@ brew "httpie"
 brew "infracost"
 # Modular IRC client
 brew "irssi"
+# Cross-platform Java Version Manager
+brew "jabba"
+# Implementation of malloc emphasizing fragmentation avoidance
+brew "jemalloc"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Tool that can switch between kubectl contexts easily and create aliases
@@ -93,6 +115,8 @@ brew "neovim"
 brew "nvm"
 # Development kit for the Java programming language
 brew "openjdk@11"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # General-purpose scripting language
 brew "php"
 # Pinentry for GPG on Mac
@@ -113,8 +137,6 @@ brew "sl"
 brew "task"
 # User interface to the TELNET protocol
 brew "telnet"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Implementation of the Language Server Protocol for LaTeX
 brew "texlab"
 # Programmatically correct mistyped console commands
@@ -131,6 +153,8 @@ brew "wakeonlan"
 brew "watch"
 # Extensible IRC client
 brew "weechat"
+# Internet file retriever
+brew "wget"
 # JavaScript package manager
 brew "yarn"
 # Fork of youtube-dl with additional features and fixes
