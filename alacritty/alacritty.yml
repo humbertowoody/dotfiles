@@ -213,7 +213,10 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  use_thin_strokes: true
+  # This option was deprecated! (https://github.com/alacritty/alacritty/issues/4616)
+  # Use:
+  #   defaults write -g AppleFontSmoothing -int 0
+  # use_thin_strokes: true
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
