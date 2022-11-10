@@ -20,6 +20,10 @@ set -g renumber-windows on
 
 # Tmux Plugin Manager
 
+# Install Tmux Plugin Manager if it's not installed.
+if "test ! -d ~/.tmux/plugins/tpm" \
+   "run 'git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins'"
+
 # Dracula theme https://draculatheme.com/tmux
 set -g @plugin "dracula/tmux"
 
@@ -37,5 +41,5 @@ set -g @dracula-show-left-icon session
 set -g @dracula-day-month true
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run -b '~/.tmux/plugins/tpm/tpm'
+run '~/.tmux/plugins/tpm/tpm'
 
