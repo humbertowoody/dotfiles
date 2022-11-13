@@ -7,6 +7,8 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "yt-dlp/taps"
+# Arduino command-line interface
+brew "arduino-cli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Core application library for C
@@ -69,6 +71,8 @@ brew "gnupg"
 brew "pango"
 # Command-driven, interactive function plotting
 brew "gnuplot"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # GitHub Markdown previewer
 brew "grip"
 # Kubernetes package manager
@@ -99,6 +103,8 @@ brew "latex2html"
 brew "lolcat"
 # List USB devices, just like the Linux lsusb command
 brew "lsusb"
+# Language Server for the Lua language
+brew "lua-language-server"
 # Just-In-Time Compiler (JIT) for the Lua programming language
 brew "luajit", args: ["HEAD"]
 # Text-to-HTML conversion tool
