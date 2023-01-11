@@ -157,3 +157,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@11/include"
 # Make gcloud use locally compiled python wheels (--tunnel-through-iap is faster!)
 export CLOUDSDK_PYTHON_SITEPACKAGES=1
 
+# Make gcloud use the new GKE Authentication plugin for Kubernetes clusters.
+export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+
