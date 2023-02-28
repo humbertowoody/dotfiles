@@ -17,6 +17,12 @@ alacritty := $(HOME)/.config/alacritty
 $(alacritty):
 	ln -fs $(PWD)/alacritty $@
 
+# Kitty is a terminal with better support for tmux sessions.
+kitty := $(HOME)/.config/kitty
+
+$(kitty):
+	ln -fs $(PWD)/kitty $@
+
 # The $HOME/tools directory is the one where I store my local scripts
 # and custom tooling for bash-based operations.
 tools := $(HOME)/tools
@@ -44,5 +50,5 @@ include dotfiles-p46/symlink-custom-paths.Makefile
 
 # General task
 .PHONY: symlink-custom-paths
-symlink-custom-paths: p46-symlink-custom-paths $(yt-dlp) $(alacritty) $(tools) $(nvim) $(hosts)
+symlink-custom-paths: p46-symlink-custom-paths $(yt-dlp) $(alacritty) $(kitty) $(tools) $(nvim) $(hosts)
 
