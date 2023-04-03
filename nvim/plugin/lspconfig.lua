@@ -88,7 +88,7 @@ nvim_lsp.tsserver.setup {
 -- }
 
 -- For Lua files
-nvim_lsp.sumneko_lua.setup {
+nvim_lsp.lua_ls.setup {
   capabilities = capabilities,
   on_attach = function(client, bufnr)
     on_attach(client, bufnr)
@@ -123,7 +123,32 @@ nvim_lsp.pyright.setup {}
 nvim_lsp.marksman.setup {}
 
 -- For Java
-nvim_lsp.jdtls.setup {}
+nvim_lsp.jdtls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  --cmd = { "jdtls.sh", vim.fn.stdpath('data') .. "/lspinstall/java/" },
+  -- cmd = {
+  --   "~/.mason/packages/_repos/eclipse.jdt.ls/install/jdt-language-server.sh",
+  --   "-java-home",
+  --   "/usr/bin/java",
+  --   vim.fn.stdpath('data') .. "/lspinstall/java/"
+  -- },
+  root_dir = function(fname)
+    -- Use the directory of the current file as the project root
+    return vim.fn.getcwd()
+  end,
+  --settings = {
+  --  java = {
+  --    format = {
+  --      settings = {
+  --        url = "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  --        profile = "GoogleStyle",
+  --        activeProfile = "GoogleStyle"
+  --      }
+  --    }
+  --  }
+  --}
+}
 
 -- For YAML
 nvim_lsp.yamlls.setup {}
