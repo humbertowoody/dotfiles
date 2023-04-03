@@ -13,6 +13,10 @@ keymap.set('n', '-', '<C-x>')
 -- Select all
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
+-- Map for wrap lines at 80 characters width
+function WrapLines()
+  vim.cmd([[%!fmt -w 80]])
+end
 
--- Aquí faltan añadir keymaps que me gustaría tener para ventanas y tabs etc.
-
+-- Wrap lines at 80 characters width
+keymap.set('n', '<C-w><C-l>', ':lua WrapLines()<CR>', { noremap = true })
