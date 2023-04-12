@@ -6,11 +6,16 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "warrensbox/tap"
 tap "yt-dlp/taps"
 # Arduino command-line interface
 brew "arduino-cli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# (Arguably) the best yacc variant
+brew "byacc"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
@@ -45,10 +50,10 @@ brew "exa"
 brew "libevent"
 # Image manipulation library
 brew "jpeg", link: true
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # C routines to compute the Discrete Fourier Transform
@@ -67,12 +72,12 @@ brew "libgcrypt"
 brew "pinentry"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Command-driven, interactive function plotting
 brew "gnuplot"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # GitHub Markdown previewer
 brew "grip"
 # Kubernetes package manager
@@ -91,6 +96,10 @@ brew "irssi"
 brew "jabba"
 # Implementation of malloc emphasizing fragmentation avoidance
 brew "jemalloc"
+# Manage your Java environment
+brew "jenv"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
 # Tool that can switch between kubectl contexts easily and create aliases
@@ -139,6 +148,8 @@ brew "rbenv"
 brew "ruby"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
+# Audio metadata library
+brew "taglib"
 # Feature-rich console based todo list manager
 brew "task"
 # User interface to the TELNET protocol
@@ -169,6 +180,8 @@ brew "yt-dlp"
 brew "z"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
+# The tfswitch command lets you switch between terraform versions.
+brew "warrensbox/tap/tfswitch"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Universal database tool and SQL client
@@ -177,6 +190,8 @@ cask "dbeaver-community"
 cask "ghdl"
 # GTK+ based wave viewer
 cask "gtkwave"
+# GPU-based terminal emulator
+cask "kitty"
 # Open-source Markdown editor
 cask "macdown"
 # Open-source BitTorrent client
