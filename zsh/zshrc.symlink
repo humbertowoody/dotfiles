@@ -160,3 +160,5 @@ export CLOUDSDK_PYTHON_SITEPACKAGES=1
 # Make gcloud use the new GKE Authentication plugin for Kubernetes clusters.
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
+# Enable mcfly, a better ctrl-r replacement.
+eval "$(mcfly init zsh)"

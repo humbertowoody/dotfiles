@@ -1,6 +1,7 @@
 # Brewfile - @humbertowoody
 # This file holds all the packages that should be installed
 # by using the homebrew package manager.
+tap "cantino/mcfly"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -14,6 +15,8 @@ brew "arduino-cli"
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# C/C++ and Java libraries for Unicode and globalization
+brew "icu4c"
 # (Arguably) the best yacc variant
 brew "byacc"
 # Core application library for C
@@ -32,6 +35,20 @@ brew "calcurse"
 brew "cmake"
 # Console Matrix
 brew "cmatrix"
+# Asynchronous event library
+brew "libevent"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Image manipulation library
+brew "jpeg", link: true
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Music player with an ncurses based interface
+brew "cmus"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Configurable talking characters in ASCII art
@@ -42,22 +59,8 @@ brew "wxwidgets"
 brew "erlang"
 # Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Modern replacement for 'ls'
 brew "exa"
-# Asynchronous event library
-brew "libevent"
-# Image manipulation library
-brew "jpeg", link: true
-# Subtitle renderer for the ASS/SSA subtitle format
-brew "libass"
-# Framework for layout and rendering of i18n text
-brew "pango"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg"
 # C routines to compute the Discrete Fourier Transform
 brew "fftw"
 # Banner-like program prints strings as ASCII art
@@ -80,6 +83,8 @@ brew "gnuplot"
 brew "go"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
+# Ping, but with a graph
+brew "gping"
 # GitHub Markdown previewer
 brew "grip"
 # Kubernetes package manager
@@ -124,6 +129,10 @@ brew "markdown"
 brew "matplotplusplus"
 # Run a Kubernetes cluster locally
 brew "minikube"
+# Audio metadata library
+brew "taglib"
+# Ncurses-based client for the Music Player Daemon
+brew "ncmpcpp"
 # E-mail reader with support for Notmuch, NNTP and much more
 brew "neomutt"
 # Parser generator tool and incremental parsing library
@@ -156,10 +165,10 @@ brew "rbenv"
 brew "ruby"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
-# Audio metadata library
-brew "taglib"
 # Feature-rich console based todo list manager
 brew "task"
+# Terminal user interface for taskwarrior
+brew "taskwarrior-tui"
 # User interface to the TELNET protocol
 brew "telnet"
 # Implementation of the Language Server Protocol for LaTeX
@@ -180,6 +189,8 @@ brew "wakeonlan"
 brew "watch"
 # Extensible IRC client
 brew "weechat"
+# Weather app for the terminal
+brew "wego"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -188,6 +199,8 @@ brew "yarn"
 brew "yt-dlp"
 # Tracks most-used directories to make cd smarter
 brew "z"
+# McFly
+brew "cantino/mcfly/mcfly"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
 # The tfswitch command lets you switch between terraform versions.
@@ -206,5 +219,7 @@ cask "gtkwave"
 cask "kitty"
 # Open-source Markdown editor
 cask "macdown"
+# Sync and backup service to Synology NAS drives
+cask "synology-drive"
 # Open-source BitTorrent client
 cask "transmission"

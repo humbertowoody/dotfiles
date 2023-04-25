@@ -26,6 +26,8 @@ brew "pcre"
 brew "python@3.9"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Text-based personal organizer
+brew "calcurse"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -122,10 +124,16 @@ brew "markdown"
 brew "matplotplusplus"
 # Run a Kubernetes cluster locally
 brew "minikube"
+# E-mail reader with support for Notmuch, NNTP and much more
+brew "neomutt"
 # Parser generator tool and incremental parsing library
 brew "tree-sitter", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Single-player roguelike video game
+brew "nethack"
+# RSS/Atom feed reader for text terminals
+brew "newsboat"
 # Manage multiple Node.js versions
 brew "nvm"
 # Development kit for the Java programming language
@@ -158,6 +166,8 @@ brew "telnet"
 brew "texlab"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# Text interface for Git repositories
+brew "tig"
 # Terminal multiplexer
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
@@ -186,6 +196,8 @@ brew "warrensbox/tap/tfswitch"
 cask "alacritty"
 # Universal database tool and SQL client
 cask "dbeaver-community"
+# Gantt chart and project management application
+cask "ganttproject"
 # VHDL 2008/93/87 simulator
 cask "ghdl"
 # GTK+ based wave viewer
