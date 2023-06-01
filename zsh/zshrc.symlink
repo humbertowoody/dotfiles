@@ -162,3 +162,7 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 # Enable mcfly, a better ctrl-r replacement.
 eval "$(mcfly init zsh)"
+
+# Include local user /bin folder in PATH
+export PATH="$PATH:$HOME/bin"
+
