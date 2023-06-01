@@ -39,8 +39,6 @@ brew "cmatrix"
 brew "libevent"
 # OpenType text shaping engine
 brew "harfbuzz"
-# Image manipulation library
-brew "jpeg", link: true
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Framework for layout and rendering of i18n text
@@ -61,6 +59,8 @@ brew "erlang"
 brew "elixir"
 # Modern replacement for 'ls'
 brew "exa"
+# GNU compiler collection
+brew "gcc"
 # C routines to compute the Discrete Fourier Transform
 brew "fftw"
 # Banner-like program prints strings as ASCII art
@@ -105,6 +105,8 @@ brew "jabba"
 brew "jemalloc"
 # Manage your Java environment
 brew "jenv"
+# Image manipulation library
+brew "jpeg", link: true
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -173,6 +175,8 @@ brew "taskwarrior-tui"
 brew "telnet"
 # Implementation of the Language Server Protocol for LaTeX
 brew "texlab"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Text interface for Git repositories
@@ -203,8 +207,6 @@ brew "z"
 brew "cantino/mcfly/mcfly"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
-# The tfswitch command lets you switch between terraform versions.
-brew "warrensbox/tap/tfswitch"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Universal database tool and SQL client
@@ -223,3 +225,64 @@ cask "macdown"
 cask "synology-drive"
 # Open-source BitTorrent client
 cask "transmission"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "carlubian.yylex"
+vscode "cschlosser.doxdocgen"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "fizzybreezy.gnuplot"
+vscode "GitHub.copilot"
+vscode "github.vscode-github-actions"
+vscode "googlecloudtools.cloudcode"
+vscode "hashicorp.terraform"
+vscode "JakeBecker.elixir-ls"
+vscode "James-Yu.latex-workshop"
+vscode "jeff-hykin.better-cpp-syntax"
+vscode "josetr.cmake-language-support-vscode"
+vscode "luniclynx.bison"
+vscode "luniclynx.lex"
+vscode "mammothb.gnuplot"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vscode.remote-explorer"
+vscode "oderwat.indent-rainbow"
+vscode "platformio.platformio-ide"
+vscode "pnp.polacode"
+vscode "puorc.awesome-vhdl"
+vscode "redhat.java"
+vscode "redhat.vscode-commons"
+vscode "redhat.vscode-yaml"
+vscode "rjyoung.vscode-modern-vhdl-support"
+vscode "sldobri.gruvbox-5-stars"
+vscode "softwaredotcom.music-time"
+vscode "softwaredotcom.swdc-vscode"
+vscode "twxs.cmake"
+vscode "Vinrobot.vhdl-formatter"
+vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
+vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-maven"
+vscode "wavetrace.wavetrace"
+vscode "wesbos.theme-cobalt2"
+vscode "yzhang.markdown-all-in-one"
