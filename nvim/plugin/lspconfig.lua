@@ -176,6 +176,17 @@ nvim_lsp.arduino_language_server.setup {
 -- For Assembly (ASM)
 nvim_lsp.asm_lsp.setup {}
 
+-- For Prolog (SWI-Prolog)
+require 'lspconfig'.prolog_ls.setup {
+  filetypes = { "prolog" },
+  root_dir = function(fname)
+    -- Use the directory of the current file as the project root
+    return vim.fn.getcwd()
+  end,
+}
+
+vim.cmd([[autocmd BufRead,BufNewFile *.prolog setfiletype prolog]]) -- This is a hack to set the filetype for .prolog files
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
