@@ -20,3 +20,12 @@ end
 
 -- Wrap lines at 80 characters width
 keymap.set('n', '<C-w><C-l>', ':lua WrapLines()<CR>', { noremap = true })
+
+
+-- Trim trailing whitespace on save
+vim.api.nvim_exec([[
+  augroup TrimWhiteSpace
+    autocmd!
+    autocmd BufWritePre * %s/\s\+$//e
+  augroup END
+]], false)
