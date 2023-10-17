@@ -207,8 +207,6 @@ brew "z"
 brew "cantino/mcfly/mcfly"
 # Terraform Language Server
 brew "hashicorp/tap/terraform-ls"
-# The tfswitch command lets you switch between terraform versions.
-brew "warrensbox/tap/tfswitch"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Universal database tool and SQL client
