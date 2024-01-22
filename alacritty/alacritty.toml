@@ -1,4 +1,4 @@
-tabspaces = 2
+# alacritty.toml - @humbertowoody
 
 [colors]
 draw_bold_text_with_bright_colors = true
@@ -145,9 +145,7 @@ mode = "~Alt"
 mods = "Shift"
 
 [scrolling]
-auto_scroll = true
-history = 5000
-opacity = 1.0
+history = 100000
 
 [window]
 dynamic_padding = true
