@@ -1,6 +1,6 @@
 #!/bin/bash
 # commitdate - @humbertowoody
-# Creates a new commit given the current date for my school 
+# Creates a new commit given the current date for my school
 # repositories that get updated with each class.
 
 

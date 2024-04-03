@@ -173,3 +173,7 @@ eval "$(mcfly init zsh)"
 # Include local user /bin folder in PATH
 export PATH="$PATH:$HOME/bin"
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
