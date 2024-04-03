@@ -24,8 +24,8 @@ vim.opt.breakindent = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
-vim.opt.ai = true -- Auto indent
-vim.opt.si = true -- Smart indent
+vim.opt.ai = true    -- Auto indent
+vim.opt.si = true    -- Smart indent
 vim.opt.wrap = false -- No wrap lines
 vim.opt.exrc = true
 vim.opt.guicursor = ''
@@ -49,3 +49,5 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 
 vim.opt.formatoptions:append { 'r' }
+
+vim.lsp.set_log_level("off") -- Disable LSP logs
