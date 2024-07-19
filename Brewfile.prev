@@ -1,6 +1,7 @@
 # Brewfile - @humbertowoody
 # This file holds all the packages that should be installed
 # by using the homebrew package manager.
+tap "azure/functions"
 tap "cantino/mcfly"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
@@ -9,24 +10,22 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "warrensbox/tap"
 tap "yt-dlp/taps"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Arduino command-line interface
 brew "arduino-cli"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# C/C++ and Java libraries for Unicode and globalization
-brew "icu4c"
 # (Arguably) the best yacc variant
 brew "byacc"
 # Core application library for C
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# Perl compatible regular expressions library
-brew "pcre"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # Text-based personal organizer
@@ -67,6 +66,8 @@ brew "fftw"
 brew "figlet"
 # Infamous electronic fortune-cookie generator
 brew "fortune"
+# GitHub command-line tool
+brew "gh"
 # Git extension for versioning large files
 brew "git-lfs"
 # Render markdown on the CLI
@@ -113,10 +114,12 @@ brew "jq"
 brew "k9s"
 # Tool that can switch between kubectl contexts easily and create aliases
 brew "kubectx"
-# Validate Kubernetes configuration files, supports multiple Kubernetes versions
-brew "kubeval"
 # LaTeX-to-HTML translator
 brew "latex2html"
+# Perl compatible regular expressions library
+brew "pcre"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Rainbows and unicorns in your console!
 brew "lolcat"
 # List USB devices, just like the Linux lsusb command
@@ -124,7 +127,7 @@ brew "lsusb"
 # Language Server for the Lua language
 brew "lua-language-server"
 # Just-In-Time Compiler (JIT) for the Lua programming language
-brew "luajit", args: ["HEAD"]
+brew "luajit"
 # Text-to-HTML conversion tool
 brew "markdown"
 # C++ Graphics Library for Data Visualization
@@ -149,8 +152,6 @@ brew "newsboat"
 brew "nvm"
 # Development kit for the Java programming language
 brew "openjdk@11"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # General-purpose scripting language
 brew "php"
 # Pinentry for GPG on Mac
@@ -161,12 +162,16 @@ brew "pipx"
 brew "pyenv"
 # Emulator for x86 and PowerPC
 brew "qemu"
+# Software environment for statistical computing
+brew "r"
 # Ruby version manager
 brew "rbenv"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
+# ISO/Edinburgh-style Prolog interpreter
+brew "swi-prolog"
 # Feature-rich console based todo list manager
 brew "task"
 # Terminal user interface for taskwarrior
@@ -203,6 +208,8 @@ brew "yarn"
 brew "yt-dlp"
 # Tracks most-used directories to make cd smarter
 brew "z"
+# Azure Functions Core Tools 4.0
+brew "azure/functions/azure-functions-core-tools@4"
 # McFly
 brew "cantino/mcfly/mcfly"
 # Terraform Language Server
@@ -221,17 +228,27 @@ cask "gtkwave"
 cask "kitty"
 # Open-source Markdown editor
 cask "macdown"
+# Development environment, tooling platform and application framework
+cask "netbeans"
+# Geographic Information System
+cask "qgis"
+# Environment for statistical computing and graphics
+cask "r"
+# Data science software focusing on R and Python
+cask "rstudio"
 # Sync and backup service to Synology NAS drives
 cask "synology-drive"
 # Open-source BitTorrent client
 cask "transmission"
+vscode "arthurwang.vsc-prolog"
 vscode "bmewburn.vscode-intelephense-client"
-vscode "carlubian.yylex"
 vscode "cschlosser.doxdocgen"
+vscode "daohong-emilio.yash"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
 vscode "fizzybreezy.gnuplot"
 vscode "GitHub.copilot"
+vscode "GitHub.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "googlecloudtools.cloudcode"
 vscode "hashicorp.terraform"
@@ -239,7 +256,6 @@ vscode "JakeBecker.elixir-ls"
 vscode "James-Yu.latex-workshop"
 vscode "jeff-hykin.better-cpp-syntax"
 vscode "josetr.cmake-language-support-vscode"
-vscode "luniclynx.bison"
 vscode "luniclynx.lex"
 vscode "mammothb.gnuplot"
 vscode "mechatroner.rainbow-csv"
