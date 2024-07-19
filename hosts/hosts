@@ -21,6 +21,12 @@
 10.10.1.2 alcocerserver
 10.10.1.2 alcocerserver.local
 
+# Tool
+10.10.1.4 tool
+
+# Avatar
+10.10.1.2 avatar
+
 # Pago46
 # BIND VM - VPN
 10.1.131.31 api-qa.bind.com.ar
